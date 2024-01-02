@@ -15,5 +15,5 @@ def getVal():
     ticker = request.form['ticker']
     selected_option = request.form.get('selected_option')
     #interval = request.form['interval']
-    best_short_sma, best_long_sma, best_pnl = 3,3,3#best_pair_for_all("MSFT", "1d", "3000000")
+    best_short_sma, best_long_sma, best_pnl = best_pair_for_all(ticker, selected_option, starting_capital)#best_pair_for_all("MSFT", "1d", "3000000")
     return render_template("calculator.html", routing="/index/", short_sma=best_short_sma, long_sma=best_long_sma, cash=round(best_pnl,2))
