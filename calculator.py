@@ -10,7 +10,7 @@ def home():
 
 @calculator.route("/", methods=['POST'])
 
-async def getVal():
+def getVal():
     starting_capital = request.form['starting_capital']
     ticker = request.form['ticker']
     selected_option = request.form.get('selected_option')
