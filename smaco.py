@@ -1,6 +1,5 @@
 import yfinance as yf
 import pandas as pd
-import time 
 from math import floor
 from concurrent.futures import ProcessPoolExecutor
 
