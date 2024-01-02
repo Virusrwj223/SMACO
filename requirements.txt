@@ -1,5 +1,4 @@
 Flask
 gunicorn
 yfinance
-concurrent
-math
+
